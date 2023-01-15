@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:test_101"
+    
+   Title="FlyoutMenu"
+   
+    x:Class="test_101.FlayoutMenuPage">
+
+
+    <StackLayout>
+        <ListView x:Name="listview" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlayoutListPage}">
+
+
+                    <local:FlayoutListPage Title="OnDemand" TargetPage="{x:Type local:MainPage}" IconSource="movie.png" />
+
+                    <local:FlayoutListPage Title="Project Info" TargetPage="{x:Type local:FlyoutHomePage}" IconSource="appinfo.png"/>
+                    
+                    <!--<local:FlayoutListPage Title="LogOut" TargetPage="{x:Type local:LogOutPage}" IconSource="logout.png"/>-->
+                </x:Array>
+
+            </ListView.ItemsSource>
+
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="0,10,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" Source="{Binding IconSource}" MinimumHeightRequest="2" WidthRequest="2"/>
+                            <Label Grid.Column="1" Text="{Binding Title}" FontSize="15" VerticalOptions="Center" FontAttributes="Bold"/>
+
+                        </Grid>
+
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </StackLayout>
+
+
+</ContentPage>
+

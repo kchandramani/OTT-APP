@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamarinExoPlayer.Controls"
+    x:DataType="controls:ExoPlayerControls"
+    x:Class="test_101.MovieDetailsPage">
+    <ContentPage.Content>
+       <!--<StackLayout>
+        <Label Text="Movie detail page."/>
+        <Image x:Name="DPImage" HeightRequest="100" WidthRequest="100"/>
+        <Label x:Name="DPDescription" HorizontalTextAlignment="Center"/>
+        <Label x:Name="DPYear" HorizontalTextAlignment="Center"/>
+        <Label x:Name="DPRating" HorizontalTextAlignment="Center"/>
+        <Label x:Name="DPRuntime" HorizontalTextAlignment="Center"/>
+       
+
+
+        </StackLayout>-->
+
+        <ScrollView BackgroundColor="Black">
+
+       
+
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="400"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="100"/>
+
+                </Grid.RowDefinitions>
+               
+
+                <Image 
+                  Grid.Row="0"  
+                 
+                 x:Name="DPImage"
+               
+                    Opacity="0.7"
+                  HorizontalOptions="Fill"
+                  Aspect="Fill"
+                  MinimumHeightRequest="399"
+                  VerticalOptions="FillAndExpand">
+
+                </Image>
+            <Image 
+                  Grid.Row="0"  
+                 
+                 x:Name="DPImage2"
+                 MinimumHeightRequest="400"
+                  MinimumWidthRequest="200"
+                  WidthRequest="200"
+                 
+                 
+                  VerticalOptions="FillAndExpand">
+
+            </Image>
+
+            <Label x:Name="DPTitle" Grid.Row="0" Padding="10" VerticalTextAlignment="Center" Margin="5,190,0,0" TextColor="White" FontSize="Title"/>
+            <!--<ProgressBar Grid.Row="0" ProgressColor="White" IsEnabled="True" Progress="0.9" Margin="15,120,30,0"/>-->
+            <StackLayout VerticalOptions="Start">
+            <ImageButton Source="playIcon.png"  
+                  Grid.Row="0"  
+                 
+                   WidthRequest="120"
+                   HeightRequest="120"
+                   VerticalOptions="End"
+                   HorizontalOptions="Start"
+                   Margin="-25,283,0,0"
+                   BackgroundColor="Transparent"
+                   Clicked="OnImageButtonClicked">
+
+                         <!--<Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnImageNameTapped"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>-->
+
+            </ImageButton>
+                 </StackLayout>
+            <Label Text="Watch" Grid.Row="0" Margin="15" HorizontalTextAlignment="Start" VerticalOptions="End" TextColor="White" FontSize="Body"/>
+               
+
+             <Label Text="Description" Grid.Row="1" FontSize="30" Margin="0,0,0,0" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="1" HeightRequest="50" TextColor="White"/>
+                <BoxView Grid.Row="1" BackgroundColor="CornflowerBlue" HorizontalOptions="Center" WidthRequest="150" Margin="0,54,0,0"/>
+
+
+            
+
+                <Label Grid.Row="2" Margin="10,50,0,0" HeightRequest="50" x:Name="DPRuntime" TextColor="White" FontSize="Body"/>
+                <Label Text="m" Grid.Row="2" Margin="72,50,0,0" TextColor="White" FontSize="Body"/>
+
+
+                 <Label Text="&#x2022;" Grid.Row="2" Margin="92,50,0,0" TextColor="White"/>
+                <Label Grid.Row="2" Margin="110,50,0,0" HeightRequest="50" x:Name="DPRating" TextColor="White" FontSize="Body"/>
+
+
+
+                <Label Text="&#x2022; " Grid.Row="2" Margin="182,50,0,0" TextColor="White"/>
+                <Label x:Name="DPYear" Grid.Row="2" Margin="190,50,0,0" HeightRequest="50" TextColor="White" FontSize="Body"/>
+
+                
+        
+
+            <Label x:Name="DPDescription" Grid.Row="3" Margin="10,0,0,0" TextColor="White" FontSize="Medium"/>
+          
+
+            </Grid>
+            </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

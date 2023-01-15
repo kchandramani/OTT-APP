@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JuCttbjtHGyEqnKMRPqWuOOQddfTyhf0f2+JHqJYnfMMZzOwU7E5WkhSJkB1+yo4DsJgVvJRQtK4uwcdZo0Jug==",
+  "success": true,
+  "projectFilePath": "/Users/Macmini/Projects/test_101/test_101/test_101/test_101.csproj",
+  "expectedPackageFiles": [
+    "/Users/Macmini/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/Macmini/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/Macmini/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/Macmini/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/Macmini/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
+    "/Users/Macmini/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512"
+  ],
+  "logs": []
+}
